@@ -53,7 +53,7 @@ class Trie {
 
         const child = node.children[letter];
         if (child) {
-            const remainder = word.substring(1);
+            const remainder = word.substring(1); //("test").substring(1) = "est"
             if (remainder) {
                 if (child.prefixes === 1) {
                     delete node.children[letter];
